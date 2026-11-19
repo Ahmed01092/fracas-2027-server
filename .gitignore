@@ -1,0 +1,16 @@
+# Dependencies & desktop build outputs (do not upload to GitHub / Render)
+node_modules/
+dist/
+
+# Local environment secrets (e.g., TURN credentials)
+.env
+.env.*
+
+# Logs & OS junk
+*.log
+npm-debug.log*
+stdout.txt
+stderr.txt
+Thumbs.db
+Desktop.ini
+.DS_Store

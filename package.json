@@ -1,0 +1,51 @@
+{
+  "name": "fracas-2027-desktop",
+  "version": "1.0.0",
+  "description": "Fracas 2027 — Native Windows Desktop Edition with P2P Rollback Online & AI Bots",
+  "type": "module",
+  "main": "electron/main.mjs",
+  "scripts": {
+    "start": "electron .",
+    "server": "node server.mjs",
+    "test": "node tests/rules.test.mjs && node tests/pickups.test.mjs && node tests/online.test.mjs",
+    "build:dir": "electron-builder --win dir",
+    "build:exe": "electron-builder --win portable"
+  },
+  "build": {
+    "appId": "com.fracas2027.desktop",
+    "productName": "Fracas 2027",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "electron/**/*",
+      "src/**/*",
+      "assets/**/*",
+      "data/**/*",
+      "index.html",
+      "server.mjs",
+      "package.json",
+      "!tests/**",
+      "!deploy/**",
+      "!dist/**"
+    ],
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ],
+      "artifactName": "Fracas 2027.exe"
+    },
+    "portable": {
+      "artifactName": "Fracas 2027.exe"
+    }
+  },
+  "devDependencies": {
+    "electron": "^35.1.5",
+    "electron-builder": "^26.0.12"
+  }
+}

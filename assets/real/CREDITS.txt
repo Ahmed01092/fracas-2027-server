@@ -1,0 +1,14 @@
+Photo textures from Poly Haven (https://polyhaven.com), released under CC0 (public domain):
+monastery_stone_floor
+cobblestone_floor_01
+slab_tiles
+cobblestone_floor_04
+mossy_cobblestone
+patterned_paving_02
+metal_grate_rusty
+mixed_rock_tiles
+square_brick_paving
+castle_brick_07
+castle_wall_slates
+rock_wall_08
+rock_boulder_dry

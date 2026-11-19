@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: fracas-2027-online
+    runtime: node
+    plan: free
+    region: frankfurt
+    buildCommand: "echo Zero-dependency Node server"
+    startCommand: "node server.mjs"
+    healthCheckPath: /health
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
